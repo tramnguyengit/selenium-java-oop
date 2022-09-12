@@ -1,6 +1,4 @@
-package lesson_01;
-
-import java.sql.SQLOutput;
+package lab_01;
 
 public class Hello {
     public static void main(String[] args) {
