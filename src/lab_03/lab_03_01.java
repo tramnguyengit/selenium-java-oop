@@ -14,7 +14,6 @@ public class lab_03_01 {
             if (arrayNum[index] % 2 == 0) {
                 totalEvenNum++;
             }
-
         }
         System.out.println("Total even number is: " + totalEvenNum);
         int totalOddNum = arrayNum.length - totalEvenNum;
