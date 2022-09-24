@@ -1,8 +1,8 @@
-package lab_04;
+package lab_05;
 
 import java.util.*;
 
-public class lab_04 {
+public class lab_05 {
     public static void main(String[] args) {
         List<Integer> myArrNum = new ArrayList<>();
         System.out.println("Please enter several number");
