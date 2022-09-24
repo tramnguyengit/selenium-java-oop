@@ -1,4 +1,4 @@
-package lab_03;
+package lesson_03;
 
 public class ArrayLearning {
     public static void main(String[] args) {
