@@ -1,8 +1,11 @@
 package lab_06;
 
+import lab_runable.Lab_06_Test;
+
 import java.util.Scanner;
 
-public class lab_06_02 {
+public class Lab_06_02 {
+
     public static void main(String[] args) {
         String myPassword = "password123";
         Scanner scanner = new Scanner(System.in);
@@ -10,7 +13,7 @@ public class lab_06_02 {
         String inputPassword = scanner.nextLine();
         int count = 1;
         for (int i = 0; i < 3; i++) {
-            if (checkPasswordIsMatch(myPassword, inputPassword) && count <= 3) {
+            if (Lab_06_Test.checkPasswordIsMatch(myPassword, inputPassword) && count <= 3) {
                 System.out.println("Correct");
                 break;
             } else if (count < 3) {
@@ -25,13 +28,5 @@ public class lab_06_02 {
         }
 
     }
-
-    private static boolean checkPasswordIsMatch(String myPassword, String inputPassword) {
-        if(inputPassword.equals(myPassword)){
-            return true;
-        }
-        return false;
-    }
-
 
 }
