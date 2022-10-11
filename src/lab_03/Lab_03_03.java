@@ -29,8 +29,5 @@ public class Lab_03_03 {
         }
         System.out.println(Arrays.toString(anArray));*/
     }
-
-
-
 }
 

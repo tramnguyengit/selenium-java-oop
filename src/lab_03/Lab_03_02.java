@@ -12,7 +12,6 @@ public class Lab_03_02 {
         Lab_03_Test.getMinMax();
     }
 
-
 }
 
 
