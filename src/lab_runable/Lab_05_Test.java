@@ -19,7 +19,6 @@ public class Lab_05_Test {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the option: ");
         return scanner.nextInt();
-
     }
 
     public static void addNumber(List<Integer> myArrList) {
