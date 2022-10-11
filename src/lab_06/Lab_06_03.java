@@ -10,12 +10,8 @@ public class Lab_06_03 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please input the string: ");
         String myStr = scanner.nextLine();
-        Lab_06_Test.getNumInArray(myStr);
+        char[] myCh = myStr.toCharArray();
+        System.out.println(Arrays.toString(myCh));
+        Lab_06_Test.trimDigit(myCh);
     }
-
-
-
 }
-
-
-

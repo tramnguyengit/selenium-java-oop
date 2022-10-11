@@ -12,7 +12,4 @@ public class Lab_06_01 {
         String inputTimeStr = scanner.nextLine();
         Lab_06_Test.calculateMin(inputTimeStr);
     }
-
-
-
 }

@@ -10,9 +10,7 @@ public class Lab_06_04 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please input your url");
         String url = scanner.nextLine();
-        Lab_06_Test.checkHttp(url);
+        Lab_06_Test.checkHttpDomain(url);
     }
-
-
 
 }
