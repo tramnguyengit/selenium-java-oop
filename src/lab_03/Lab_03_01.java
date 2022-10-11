@@ -11,7 +11,8 @@ public class Lab_03_01 {
         Odd numbers: 3*/
     public static void main(String[] args) {
         int[] arrayNum = new int[]{0, 2, 3, 4, 5};
-        Lab_03_Test.countOddOrEvenNum(arrayNum);
+        int totalEvenNum = 0;
+        Lab_03_Test.countOddAndEvenNum(arrayNum, totalEvenNum);
     }
 
 

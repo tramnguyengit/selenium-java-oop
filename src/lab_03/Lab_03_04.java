@@ -17,8 +17,6 @@ public class Lab_03_04 {
         int[] mergeArr = Lab_03_Test.mergeMethod(firstArr, secondArr);
         System.out.println(Arrays.toString(mergeArr));
     }
-
-
 }
 
 
