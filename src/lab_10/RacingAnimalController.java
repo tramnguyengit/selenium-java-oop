@@ -3,9 +3,31 @@ package lab_10;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RacingAnimalMethod {
+public class RacingAnimalController {
 
-    private static final List<Animal> animalRacerList = new ArrayList<>();
+    public Animal getWinner(List<Animal> animalList) {
+        List<Animal> animalRacerList = getAnimalRacer(animalList);
+        Animal winner = animalRacerList.get(0);
+        for (Animal animal : animalRacerList) {
+            if (animal.getSpeed() > winner.getSpeed()) {
+                winner = animal;
+            }
+        }
+        return winner;
+    }
+
+    private List<Animal> getAnimalRacer(List<Animal> animalList) {
+        List<Animal> animalRacerList = new ArrayList<>();
+        for (Animal animal : animalList) {
+            if (!animal.isFylable()) {
+                animalRacerList.add(animal);
+            }
+        }
+        return animalRacerList;
+    }
+}
+
+    /*private static final List<Animal> animalRacerList = new ArrayList<>();
 
     protected static List<Animal> getAnimalRacer(List<Animal> animalList) {
         for (Animal animal : animalList) {
@@ -38,5 +60,4 @@ public class RacingAnimalMethod {
         System.out.println(animal);
         return animal;
     }
-
-}
+*/

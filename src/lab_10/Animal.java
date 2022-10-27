@@ -4,14 +4,14 @@ import java.security.SecureRandom;
 
 public class Animal {
 
-    //Outner
+    //Outner - READONLY
 
     private String name;
 
     private boolean fylable;
     private int speed;
 
-    public Animal(Builder builder) {
+    protected Animal(Builder builder) {
         this.name = builder.name;
         this.fylable = builder.fylable;
         this.speed = builder.speed;
@@ -38,7 +38,7 @@ public class Animal {
                 '}';
     }
 
-    //Inner
+    //Inner - WRITE ONLZy
     public static class Builder {
         private String name;
         private boolean fylable;
