@@ -14,6 +14,9 @@ public class AnimalTest {
         dog.setName("Dog");
 
         List<Animal> animalList = Arrays.asList(horse, tiger, dog);
-        new AnimalController().checkWinner(animalList);
+        System.out.println(animalList);
+        Animal winner = new AnimalController().getWinner(animalList);
+        System.out.println(winner);
+
     }
 }
